@@ -1,14 +1,17 @@
 @charset "UTF-8";
 /* Fonts */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
-@import url(https://fonts.googleapis.com/css?family=Bitter:400,700);
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,400&display=swap');
 /* Colors */
 /* Sizes */
 /* Media Query Breakpoint */
 /* Header Arrow Effect */
 /* Typography */
 h1, h2, h3 {
-  font-family: Bitter, serif;
+  /* font-family: Bitter, serif; */
+  font-family: 'Roboto', sans-serif;
+
 }
 
 h1 {
@@ -91,7 +94,7 @@ header {
 }
 header h1 {
   position: relative;
-  font-family: 'Bitter', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 250%;
   background: #28627d;
   color: white;
@@ -174,6 +177,8 @@ header a:hover, header a:focus {
   background: #00baa6;
 }
 
+
+
 .info {
   width: 100%;
 }
@@ -200,6 +205,7 @@ section p {
 section .education p {
   margin-top: 3px;
 }
+/*voy a cambiar al reves */
 @media (max-width: 58em) {
   section {
     width: 100%;
@@ -239,4 +245,9 @@ aside a:hover, aside a:focus {
     border-left: none;
     border-top: 1px solid #ccc;
   }
+}
+
+h3.pie {
+  text-align: center;
+
 }
