@@ -109,8 +109,36 @@ header h1 {
     line-height: 35px;
   }
   img.foto1 {
-     box-shadow: #ffffff42 0px 0px 11px 3px;
-   }
+    box-shadow: #ffffff42 0px 0px 11px 3px;
+    transition: all 0.8s;
+  }
+
+ img.foto1:hover {
+   box-shadow: rgb(255, 255, 255) 0px 0px 11px 3px;
+   cursor: pointer ;
+   transform: rotateY(180deg);
+   transition: all 0.8s;
+ } 
+/*seccion premio foto con descripcion porner en las otras unidades */
+.cajaPremio {
+  display: grid;
+  grid-template-columns: repeat(2,1Fr); /* en celu va 1,1fr*/
+  background-color: #cae5e7;
+  /* border-radius: 10px; */
+  text-align: center;
+    align-items: center;
+} 
+
+/* .premio {
+text-align: center;
+} */
+
+.foto2 {
+  width: 80%;
+  padding: 14px;
+  border-radius: 20px;
+}
+
 }
 
 /* Donde dice max-width:36em poner todo lo de celulares */
@@ -124,7 +152,16 @@ header h1 {
     text-align: center;
     padding: 0px 0px;
   }
- 
+  
+  .cajaPremio {
+    grid-template-columns: repeat(1,1Fr);
+  }
+
+  .foto2 {
+    width: 90%;
+    padding: 7px;
+    border-radius: 15px;
+} 
 
 }
 
@@ -152,8 +189,42 @@ header div {
   header div {
     width: 50%;
     text-align: center;
+    
   }
+  .contact-info {
+    font-size: 20px;
+   }
 }
+/* ESTO ES PARA MAS DE 75em, pantallas GRANDES */
+@media (min-width: 75em) {
+  header div {
+    width: 50%;
+    text-align: center;
+  }
+  header h1 {
+    width: 100%;
+    padding-right: 5px;
+  }
+  .contact-info {
+    line-height: 35px;
+  }
+  img.foto1 {
+     box-shadow: #ffffff42 0px 0px 11px 3px;
+     transition: all 0.8s;
+   }
+
+  img.foto1:hover {
+    box-shadow: rgb(255, 255, 255) 0px 0px 11px 3px;
+    cursor: pointer ;
+    transform: rotateY(180deg);
+    transition: all 0.8s;
+  } 
+
+   .contact-info {
+    font-size: 22px;
+   }
+}
+
 @media (max-width: 36em) {
    header div {
     width: 100%;
