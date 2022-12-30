@@ -56,7 +56,7 @@ a:hover, a:focus {
 }
 
 body {
-  background: #CAE5E7;
+  background: #ededed;
   color: #333;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -70,6 +70,33 @@ body {
   margin: 0 auto 50px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.work {
+  border-top: 1px #e0dcdc solid;
+}
+
+
+header h1:after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  border-top: 45px solid transparent;
+  border-bottom: 45px solid transparent;
+  border-left: 20px solid #28627d;
+  right: -20px;
+  top: 0;
+}
+header div {
+  position: relative;
+  color: white;
+  float: left;
+  height: auto;
+  /* padding-top: 24px;
+  padding-left: 60px;
+  padding-right: 48px; */
+  /* height: 90px; */
+}
+
 @media (max-width: 58em) {
   .resume {
     width: 96%;
@@ -105,6 +132,10 @@ header h1 {
     width: 100%;
     padding-right: 5px;
   }
+section {
+  border-right: 1px #e0dcdc solid;
+}
+
   .contact-info {
     line-height: 35px;
   }
@@ -123,22 +154,16 @@ header h1 {
 .cajaPremio {
   display: grid;
   grid-template-columns: repeat(2,1Fr); /* en celu va 1,1fr*/
-  background-color: #cae5e7;
-  /* border-radius: 10px; */
+  background-color: #f5f5f5;
+  border-radius: 10px;
   text-align: center;
-    align-items: center;
+  align-items: center;
 } 
-
-/* .premio {
-text-align: center;
-} */
-
 .foto2 {
   width: 80%;
   padding: 14px;
   border-radius: 20px;
 }
-
 }
 
 /* Donde dice max-width:36em poner todo lo de celulares */
@@ -153,6 +178,10 @@ text-align: center;
     padding: 0px 0px;
   }
   
+  section {
+    padding: 0 24px;
+  }
+
   .cajaPremio {
     grid-template-columns: repeat(1,1Fr);
   }
@@ -162,29 +191,8 @@ text-align: center;
     padding: 7px;
     border-radius: 15px;
 } 
-
 }
 
-header h1:after {
-  position: absolute;
-  content: '';
-  height: 100%;
-  border-top: 45px solid transparent;
-  border-bottom: 45px solid transparent;
-  border-left: 20px solid #28627d;
-  right: -20px;
-  top: 0;
-}
-header div {
-  position: relative;
-  color: white;
-  float: left;
-  height: auto;
-  /* padding-top: 24px;
-  padding-left: 60px;
-  padding-right: 48px; */
-  /* height: 90px; */
-}
 @media (max-width: 75em) {
   header div {
     width: 50%;
@@ -205,6 +213,10 @@ header div {
     width: 100%;
     padding-right: 5px;
   }
+section {
+  border-right: 1px #e0dcdc solid;
+}
+
   .contact-info {
     line-height: 35px;
   }
@@ -223,6 +235,28 @@ header div {
    .contact-info {
     font-size: 22px;
    }
+
+   .cajaPremio {
+    display: grid;
+    grid-template-columns: repeat(2,1Fr);
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+   }
+
+.foto2 {
+  width: 85%;
+  box-shadow: #000000b5 2px 1px 6px 2px;
+  transition: all 0.8s;
+  margin: 7px;
+  border-radius: 4px;
+}
+
+.foto2:hover {
+  box-shadow: #000000b5 -2px -1px 6px 2px;
+}
+
 }
 
 @media (max-width: 36em) {
@@ -266,7 +300,7 @@ header a:hover, header a:focus {
 section {
   float: left;
   width: 70%;
-  padding: 0 30px;
+  padding: 0 24px;
 }
 section article {
   margin-bottom: 30px;
@@ -286,6 +320,7 @@ section .education p {
   margin-top: 3px;
 }
 /*voy a cambiar al reves */
+
 @media (max-width: 58em) {
   section {
     width: 100%;
