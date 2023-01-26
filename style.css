@@ -155,6 +155,10 @@ transition: transform 0.9s;
     box-shadow: #000000 0px 0px 3px 0px;
 }
 
+aside article {
+  text-align: center;
+}
+
 /* FIN DE LAS REGLAS GENERALES....PARA CUALQUIER TAMAÑO QUE TENGA, AHORA ABAJO VAN LAS ESPECIALES */
 
 @media (max-width: 58em) {
